@@ -7,8 +7,7 @@ const url:string = "http://localhost:3999/api";
 
 export function fetchQuestions(): Promise<Question[]> {
     return axios
-        .get(url, {
-        })
+        .get(url, {})
         .then(response => response.data)
 };
 
